@@ -1,0 +1,24 @@
+{% extends 'authenticat/base.html' %}
+
+{% block title %} TheMusicianTheory - SignIn {% endblock %}
+
+{% block content %}
+
+<h1>LOGIN</h1>
+<form action="#" method="post">
+    {% csrf_token %}
+
+    <label for="">username</label>
+    <input type="text" name="username">
+    <br>
+    <!-- <label for="">email</label>
+    <input type="email" name="email"> -->
+    <label for="">password</label>
+    <input type="password" name="password">
+    <br>
+
+    <button type="submit">submit</button>
+</form>
+<p>don't have an account? Register <a href="/auth/signup">here</p>
+
+{% endblock %}
